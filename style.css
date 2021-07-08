@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-repeat: no-repeat;
+}
+
+.container {
+  padding: 20px 70px;
+}
+.current__info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.date__container .time {
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.date__container #am-pm {
+  font-size: 15px;
+}
+
+.date__container .date {
+  font-size: 20px;
+}
+.place__container {
+  text-align: end;
+}
+
+.place__container .time__zone {
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.place__container .country {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#current__weather-items {
+  width: 60%;
+  margin: auto;
+  top: 35px;
+}
+#current__weather-items .weather__items {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 25px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+#current__weather-items .weather__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.future__forecast {
+  padding: 25px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: start;
+  position: fixed;
+  bottom: 0;
+  overflow-y: scroll;
+}
+.future__forecast::-webkit-scrollbar {
+  display: none;
+}
+.future__forecast .today {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 55px 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.future__forecast .today .day {
+  color: #fff;
+  padding: 5px 15px;
+  background: #3c3c44;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.future__forecast .today .temp {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 35px;
+  width: 200px;
+  height: 30px;
+  text-align: center;
+}
+.future__forecast .weather__forecast {
+  display: flex;
+}
+
+.weather__forecast .weather__forecast-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  margin: 0 20px;
+  /* border: 1px solid #fff; */
+  background: rgba(255, 255, 255, 0.5);
+
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.weather__forecast .weather__forecast-item .day {
+  color: #fff;
+  padding: 5px 15px;
+  background: #3c3c44;
+  text-align: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.weather__forecast .weather__forecast-item .temp {
+  width: 200px;
+  height: 30px;
+  font-weight: 200;
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  #current__weather-items {
+    width: 75%;
+  }
+  .future__forecast {
+    justify-content: start;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .container {
+    padding: 20px;
+  }
+  #current__weather-items {
+    width: 75%;
+  }
+  .future__forecast {
+    justify-content: start;
+  }
+
+  .future__forecast .today .temp {
+    font-size: 16px;
+  }
+
+  .date__container .time {
+    font-size: 50px;
+  }
+
+  .date__container #am-pm {
+    font-size: 20px;
+  }
+
+  .date__container .date {
+    font-size: 20px;
+  }
+
+  .place__container {
+    text-align: end;
+    margin-top: 15px;
+  }
+
+  .place__container .time__zone {
+    font-size: 20px;
+  }
+
+  .current__info .others {
+    padding: 12px;
+  }
+
+  .current__info .others .weather__item {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .place__container #time__zone {
+    font-size: 12px;
+  }
+
+  #current__weather-items {
+    width: 75%;
+  }
+  .date__container .time {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .date__container #am-pm {
+    font-size: 10px;
+  }
+
+  .date__container .date {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .place__container #time__zone {
+    font-size: 12px;
+  }
+
+  #current__weather-items {
+    width: 75%;
+  }
+  .date__container .time {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  .date__container #am-pm {
+    font-size: 10px;
+  }
+
+  .date__container .date {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wheather App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="current__info">
+        <div class="date__container">
+          <div class="time" id="time"><span id="am-pm"></span></div>
+          <div class="date" id="date"></div>
+        </div>
+        <div class="place__container">
+          <div class="time__zone" id="time__zone"></div>
+          <div class="country" id="country"></div>
+        </div>
+      </div>
+    </div>
+    <div class="other" id="current__weather-items">
+      <div class="weather__items">
+        <div class="weather__item">
+          <div>Humidity</div>
+          <div>0</div>
+        </div>
+        <div class="weather__item">
+          <div>Pressure</div>
+          <div>0</div>
+        </div>
+        <div class="weather__item">
+          <div>Wind speed</div>
+          <div>0</div>
+        </div>
+      </div>
+    </div>
+    <div class="future__forecast">
+      <div class="today" id="current__temp">
+        <img
+          src="http://openweathermap.org/img/wn/10d@2x.png"
+          alt="wheather icon"
+          class="weather__icon"
+        />
+        <div class="other">
+          <div class="day">Monday</div>
+          <div class="temp">Night -25&#176; C</div>
+          <div class="temp">day 0&#176; C</div>
+        </div>
+      </div>
+      <div class="weather__forecast" id="weather__forecast">
+        <div class="weather__forecast-item">
+          <div class="day">tuesday</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="wheather icon"
+            class="weather__icon"
+          />
+          <div class="temp">Night 0&#176; C</div>
+          <div class="temp">day 0&#176; C</div>
+        </div>
+        <div class="weather__forecast-item">
+          <div class="day">tuesday</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="wheather icon"
+            class="weather__icon"
+          />
+          <div class="temp">Night 0&#176; C</div>
+          <div class="temp">day 0&#176; C</div>
+        </div>
+        <div class="weather__forecast-item">
+          <div class="day">tuesday</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="wheather icon"
+            class="weather__icon"
+          />
+          <div class="temp">Night 0&#176; C</div>
+          <div class="temp">day 0&#176; C</div>
+        </div>
+        <div class="weather__forecast-item">
+          <div class="day">tuesday</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="wheather icon"
+            class="weather__icon"
+          />
+          <div class="temp">Night 0&#176; C</div>
+          <div class="temp">day 0&#176; C</div>
+        </div>
+        <div class="weather__forecast-item">
+          <div class="day">tuesday</div>
+          <img
+            src="http://openweathermap.org/img/wn/10d@2x.png"
+            alt="wheather icon"
+            class="weather__icon"
+          />
+          <div class="temp">Night 0&#176; C</div>
+          <div class="temp">day 0&#176; C</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script File -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
